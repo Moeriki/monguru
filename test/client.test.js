@@ -13,15 +13,15 @@ describe('Client', () => {
 
   describe('database()', () => {
     it('should get named database', () => {
-      const dev = client.database('dev');
-      expect(dev).toBeInstanceOf(Database);
-      expect(dev).toHaveProperty('name', 'dev');
+      const development = client.database('dev');
+      expect(development).toBeInstanceOf(Database);
+      expect(development).toHaveProperty('name', 'dev');
     });
 
     it('should get named databases identically', () => {
-      const dev1 = client.database('dev');
-      const dev2 = client.database('dev');
-      expect(dev1).toBe(dev2);
+      const development1 = client.database('dev');
+      const development2 = client.database('dev');
+      expect(development1).toBe(development2);
     });
 
     it('should get databases from proxy', () => {
