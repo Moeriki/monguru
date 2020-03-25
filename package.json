@@ -5,6 +5,9 @@
   "keywords": [],
   "author": "",
   "license": "UNLICENSED",
+  "engines": {
+    "node": "12"
+  },
   "main": "build/cjs.js",
   "module": "lib/index.js",
   "scripts": {
