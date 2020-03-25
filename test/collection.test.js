@@ -21,13 +21,13 @@ describe('Collection', () => {
   });
 
   describe('count()', () => {
-    xit('should without query', async () => {
+    it.skip('should without query', async () => {
       await collection.create(Beatles);
       const count = await collection.count();
       expect(count).toBe(Beatles.length);
     });
 
-    xit('should with query', async () => {
+    it.skip('should with query', async () => {
       await collection.create(Beatles);
       collection.count();
       expect(John).not.toHaveProperty('_id');
@@ -61,6 +61,6 @@ describe('Collection', () => {
   });
 
   describe('findOne()', () => {
-    it('should find one via inquiry');
+    it('should find one via inquiry', () => {});
   });
 });

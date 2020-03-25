@@ -8,7 +8,7 @@ describe('Client', () => {
   });
 
   describe('collection()', () => {
-    it('should get collection from default database');
+    it.skip('should get collection from default database', () => {});
   });
 
   describe('database()', () => {
